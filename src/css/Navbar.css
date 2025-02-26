@@ -1,0 +1,92 @@
+.navbar {
+  background: linear-gradient(to right, #0f1419, #1c2526); /* Dark gradient */
+  padding: 1.2rem 2.5rem; /* Slightly more padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Subtle edge */
+}
+
+.navbar-brand {
+  font-size: 1.7rem; /* Slightly larger */
+  font-weight: 700; /* Bolder */
+  color: #d4d4d4; /* Soft silver */
+  text-transform: uppercase; /* Adds a premium touch */
+  letter-spacing: 1px; /* Spaced out */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2.5rem; /* More breathing room */
+}
+
+.nav-link {
+  font-size: 1.1rem; /* Slightly larger text */
+  padding: 0.6rem 1.2rem; /* More clickable area */
+  border-radius: 6px; /* Softer corners */
+  color: #b0b0b0; /* Lighter gray */
+  transition: all 0.3s ease; /* Smoother transition */
+  border: 1px solid transparent; /* For hover effect */
+  background: none; /* Ensure button inherits */
+  cursor: pointer; /* For button */
+  text-decoration: none; /* For links */
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* Subtler hover */
+  color: #ffffff; /* Brightens on hover */
+  border-color: rgba(255, 255, 255, 0.2); /* Metallic outline */
+  transform: scale(1.05); /* Slight zoom */
+}
+
+/* Login Button Styles */
+.login-btn {
+  background-color: rgba(75, 192, 192, 0.1); /* Teal tint */
+  border: 1px solid #4bc0c0; /* Teal border */
+  color: #4bc0c0; /* Teal text */
+  font-weight: 600; /* Bolder */
+}
+
+.login-btn:hover {
+  background-color: rgba(75, 192, 192, 0.3); /* Stronger teal */
+  color: #ffffff; /* White on hover */
+  border-color: #66d9d9; /* Brighter teal */
+}
+
+/* Logged-In State */
+.login-btn.logged-in {
+  background-color: rgba(255, 99, 132, 0.1); /* Pink-red tint */
+  border-color: #ff6384; /* Pink-red border */
+  color: #ff6384; /* Pink-red text */
+}
+
+.login-btn.logged-in:hover {
+  background-color: rgba(255, 99, 132, 0.3); /* Stronger pink-red */
+  border-color: #ff85a2; /* Brighter pink-red */
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem; /* Adjusted for mobile */
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem; /* Scaled down but still prominent */
+    letter-spacing: 0.5px;
+  }
+
+  .navbar-links {
+    gap: 1.2rem; /* Tighter but balanced */
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.8rem; /* Compact yet usable */
+    font-size: 1rem;
+  }
+
+  .login-btn {
+    padding: 0.5rem 1rem; /* Slightly larger on mobile */
+  }
+}
